@@ -1,7 +1,7 @@
 package main
 
 import (
-	"io/ioutil"
+	"os"
 
 	"gopkg.in/yaml.v3"
 )
@@ -37,7 +37,8 @@ type Schema struct {
 // SchemaFromYAML parses a yaml file into a Schema object.
 func SchemaFromYAML(path string) (Schema, error) {
 	var schema Schema
-	f, err := ioutil.ReadFile(path)
+
+	f, err := os.ReadFile(path)
 	if err != nil {
 		return schema, err
 	}
