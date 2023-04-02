@@ -60,6 +60,14 @@ func TestMeta_SchemaFromYAML(t *testing.T) {
 				Demographics:      demographics,
 			},
 		},
+		{
+			path: "test_resources/test_schema_single_question.yaml",
+			expected: Schema{
+				OrgNodeColumnName: "org_node",
+				Questions:         questions[:1],
+				Demographics:      demographics[:1],
+			},
+		},
 	}
 
 	for _, tc := range testCases {
