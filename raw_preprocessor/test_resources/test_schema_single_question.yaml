@@ -1,0 +1,28 @@
+org_node_column_name: org_node
+questions:
+  - text: "Question 1 text"
+    column_name: "q1"
+    nullable: true
+    min_value: 1
+    max_value: 3
+  - text: "Question 2 text"
+    column_name: "q2"
+    nullable: true
+    min_value: 1
+    max_value: 4
+  - text: "Question 3 text"
+    column_name: "q3"
+    nullable: false
+    min_value: 1
+    max_value: 5
+demographics:
+  - text: "Demographic 1 text"
+    column_name: "d1"
+    nullable: true
+    min_value: 1
+    max_value: 3
+  - text: "Demographic 2 text"
+    column_name: "d2"
+    nullable: false
+    min_value: 1
+    max_value: 4
